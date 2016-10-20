@@ -1,0 +1,45 @@
+/*
+* @Author: lanten
+* @Date:   2016-10-20 19:23:04
+* @Last Modified by:   lanten
+* @Last Modified time: 2016-10-20 20:20:17
+*/
+.page-header{
+	// background-color: #09c;
+	position: relative;
+	overflow: hidden;
+	animation: myfirst 14s infinite linear;
+	&:after{
+		content:"";
+		display: block;
+		width: 100%;
+		height: 400px;
+		background-image: linear-gradient(120deg, rgba(#000, 0.1), rgba(#000, 0.45));
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+	}
+	.head-content{
+		position: relative;
+		z-index: 1;
+	}
+}
+
+@keyframes myfirst{
+	0% {
+	  background: #318EC2;
+	}
+	25%{
+		background: #9E66C0;
+	}
+	50%{
+		background: #A8A032;
+	}
+	75%{
+		background: #36A94B;
+	}
+	100%{
+		background: #318EC2;
+	}
+}
